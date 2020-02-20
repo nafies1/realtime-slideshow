@@ -12,7 +12,7 @@ export default {
   name: 'app',
   data () {
     return {
-      socket: io.connect('http://localhost:3000')
+      socket: io.connect('https://immense-cove-35759.herokuapp.com/')
     }
   },
   components: {

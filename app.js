@@ -1,6 +1,9 @@
 const app = require('express')();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
+const cors = require('cors')
+
+app.use(cors())
 
 server.listen(process.env.PORT, () => {
     console.log('Running on port', process.env.PORT);
